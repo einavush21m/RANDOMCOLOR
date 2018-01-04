@@ -1,0 +1,32 @@
+<html>
+    <head>
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+            
+        <script>
+        $(function(){//like  "main" in c
+        $('body').keyup(function(e){//e=shorcut for event ,body=all page
+            if(e.keyCode === 32){
+                // user has pressed space
+               //alert("space bar hit!!");
+               // $('body').css('background','red');
+                 var colorR = Math.floor((Math.random() * 256));
+                 var colorG = Math.floor((Math.random() * 256));
+                 var colorB = Math.floor((Math.random() * 256));
+                $('body').css("background-color", "rgb(" + colorR + "," + colorG + "," + colorB + ")");
+       }
+    });  
+          });  
+        </script>
+
+    
+    </head>
+    <body>
+
+      <h1>hit spacebar to change random color</h1>
+       
+    </body>
+
+</html>
